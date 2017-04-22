@@ -3,7 +3,7 @@ class Player
   SPEED = 4
 
   def initialize
-    @image = Gosu::Image.new("media/starfighter.bmp")
+    @image = Gosu::Image.new("media/ship1.png")
     @x = @y = @vel_x = @vel_y = @angle = 0.0
     @score = 0
   end
