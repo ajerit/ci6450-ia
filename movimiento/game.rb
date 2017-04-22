@@ -29,7 +29,7 @@ class Game < Gosu::Window
     # Init estrellas
     @agent_array = Array.new
 
-    3.times do
+    7.times do
       @agent_array.push(Agent.new)
     end
 
@@ -77,7 +77,8 @@ class Game < Gosu::Window
     @player.move
 #############################################################
 
-    @agent_array.each { |agent| agent.seek(@player.pos) }
+    #@agent_array.each { |agent| agent.seek(@player.pos) }
+    @agent_array.each { |agent| agent.wander }
     @agent_array.each { |agent| agent.move }
   end
 
