@@ -12,3 +12,9 @@ Imágenes para juegos
 ```
 https://opengameart.org/
 ```
+
+22/04
+Implementado el Kinematic Seek (pagina 50) en la carpeta de movimiento
+Los enemigos te persiguen, lo que no me gusta es que después de cierto tiempo
+todos terminan pegados, porque usan el mismo vector para perseguir me imagino.
+También porque los personajes no tienen 'cuerpo' ni 'forma' (para esto deberíamos usar chipmunk)
