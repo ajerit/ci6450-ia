@@ -31,11 +31,11 @@ class Player
   end
 
   def accelerate
-    @shape.body.apply_force(@shape.body.rot * (3000.0/SUBSTEPS), CP::Vec2.new(0.0, 0.0))
+    @shape.body.apply_force(@shape.body.rot * (2000.0/SUBSTEPS), CP::Vec2.new(0.0, 0.0))
   end
 
   def boost
-    @shape.body.apply_force(@shape.body.rot * 3000.0, CP::Vec2.new(0.0, 0.0))
+    @shape.body.apply_force(@shape.body.rot * 2000.0, CP::Vec2.new(0.0, 0.0))
   end
 
   def reverse

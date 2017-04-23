@@ -76,6 +76,7 @@ class Game < Gosu::Window
     SUBSTEPS.times do
       @player.shape.body.reset_forces
       @player.validate_position
+      @agent_array.each { |agent| agent.shape.body.reset_forces }
       @agent_array.each { |agent| agent.validate_position }
 
       ################ Moverse con las tecla Up ##################
@@ -102,7 +103,8 @@ class Game < Gosu::Window
       #@agent_array.each { |agent| agent.arrive(@player.pos) }
       #@agent_array.each { |agent| agent.seek(@player.pos) }
       #@agent_array.each { |agent| agent.flee(@player.pos) }
-      @agent_array.each { |agent| agent.wander }
+      #@agent_array.each { |agent| agent.wander }
+      @agent_array.each { |agent| agent.seek_dyn(@player.pos) }
 
       @space.step(@dt)
     end
