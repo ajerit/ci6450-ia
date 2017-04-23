@@ -13,6 +13,11 @@ Imágenes para juegos
 https://opengameart.org/
 ```
 
+23/04
+******
++ Implementado el mismo juego y algoritmos pero usando Chipmunk para manejar las colisiones.
++ Los sprites no se pegan encima como antes ya que ahora tiene cuerpo y forma.
+
 22/04
 ******
 + Implementados: Seek, Flee, Arrive, Wander
