@@ -1,3 +1,5 @@
+require 'chipmunk'
+
 class Player
   attr_reader :score
   SPEED = 4

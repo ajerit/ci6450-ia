@@ -62,7 +62,6 @@ class Agent
     vel = Vector[target[:x] - @x, target[:y] - @y]
     vel = vel.normalize
 
-    # Detenemos el movimiento si ya esta muy cerca
     vel *= @maxSpeed
 
     @vel_x = vel[0]

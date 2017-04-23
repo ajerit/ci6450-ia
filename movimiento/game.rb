@@ -12,6 +12,7 @@ module ZOrder
 end
 
 WIDTH, HEIGHT = 720, 576
+SUBSTEPS = 6
 
 class Game < Gosu::Window
   def initialize
