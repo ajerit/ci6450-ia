@@ -75,7 +75,8 @@ class Agent
     end
 
     output.angular = 0
-    move_dyn(output)
+    @shape.body.apply_force(@shape.body.rot, output.linear)
+    #move_dyn(output)
   end
 
   def draw
